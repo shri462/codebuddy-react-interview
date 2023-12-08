@@ -9,19 +9,26 @@ const Home = () => {
         Home
       </h1>
 
-      <h2 className="mb-3 text-2xl">Welcome to the home page!</h2>
-
-      <p className="mb-7">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eos quis iure unde incidunt?
-        Hic, quisquam. Voluptate placeat officiis corporis dolores ea unde maxime, sed nulla cumque
-        amet quam aliquam quas incidunt debitis sit aut a soluta quisquam repellat dignissimos qui.
-        Perspiciatis similique quaerat reiciendis nam aliquam?
-      </p>
-
-      <Link to="/posts" className="flex items-center text-blue-600 hover:underline">
-        Posts
-        <Icon icon="mdi:arrow-right" className="ml-2" />
-      </Link>
+      <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <Link
+          to="/set-one"
+          className="rounded-md border-none bg-blue-500 p-4 text-center text-white"
+        >
+          Set 1 Solution
+        </Link>
+        <Link
+          to="/set-two"
+          className="rounded-md border-none bg-blue-500 p-4 text-center text-white"
+        >
+          Set 2 Solution
+        </Link>
+        <Link
+          to="/set-three"
+          className="rounded-md border-none bg-blue-500 p-4 text-center text-white"
+        >
+          Set 3 Solution
+        </Link>
+      </div>
     </div>
   );
 };
