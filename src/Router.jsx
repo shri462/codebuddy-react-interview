@@ -4,6 +4,7 @@ import Posts from "./pages/set-one/posts/Posts";
 import Root from "./pages/Root";
 import LoginForm from "./pages/set-one/login/LoginForm";
 import LoginFormContainer from "./pages/set-one/login/LoginFormContainer";
+import TicketBooking from "./pages/set-two/TicketBooking";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
   {
     path: "/set-two",
     element: <Root />,
-    children: [{ path: "", element: <Home /> }],
+    children: [{ path: "", element: <TicketBooking /> }],
   },
   {
     path: "/set-three",
