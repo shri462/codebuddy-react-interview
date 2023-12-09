@@ -18,10 +18,6 @@ const LoginForm = () => {
     phoneNumber: "",
   });
 
-  useEffect(() => {
-    console.log(userData);
-  }, [userData]);
-
   return (
     <div className="rounded-lg bg-gray-50 p-7 text-gray-900 shadow-lg">
       <h1 className="text-4xl">Login Form</h1>
