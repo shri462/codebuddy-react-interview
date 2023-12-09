@@ -11,7 +11,7 @@ const Home = () => {
 
       <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Link
-          to="/set-one"
+          to="/set-one/login-form"
           className="rounded-md border-none bg-blue-500 p-4 text-center text-white"
         >
           Set 1 Solution

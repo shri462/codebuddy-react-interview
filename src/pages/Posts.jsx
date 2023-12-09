@@ -45,7 +45,7 @@ const Posts = () => {
 
             <div className="mt-2">
               <img
-                className="h-16 w-16 rounded-full"
+                className="h-16 w-16 rounded-full lg:h-24 lg:w-24"
                 src={post.avatar}
                 alt=""
                 width="384"
