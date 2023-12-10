@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import { Icon } from "@iconify/react";
+import ImageSlider from "./components/ImageSlider";
 
 const BingHomepage = () => {
   const [imge, setImge] = useState("");
@@ -21,21 +22,21 @@ const BingHomepage = () => {
 
   return (
     <div
-      className="min-h-[100dvh] bg-cover bg-center bg-no-repeat p-7 xl:px-48"
+      className="mx-auto flex min-h-[100dvh] flex-col justify-between bg-cover bg-center bg-no-repeat p-7 xl:px-48"
       style={{
         backgroundImage: `url("${imge}")`,
       }}
     >
-      <div className="container mx-auto">
-        <Header />
+      <Header />
 
-        <div className="mt-48 flex gap-2 rounded-xl bg-white px-4 py-2 lg:mx-64">
-          <Icon icon="basil:search-outline" color="gray" width="32" height="32" />
-          <input className="w-full focus:outline-none" autoFocus placeholder="Ask me anything..." />
-          <Icon icon="ph:microphone-light" color="blue" width="32" height="32" />
-          <Icon icon="tabler:capture" color="blue" width="32" height="32" />
-        </div>
+      <div className="flex gap-2 rounded-xl bg-white px-4 py-2 lg:mx-64">
+        <Icon icon="basil:search-outline" color="gray" width="32" height="32" />
+        <input className="w-full focus:outline-none" autoFocus placeholder="Ask me anything..." />
+        <Icon icon="ph:microphone-light" color="blue" width="32" height="32" />
+        <Icon icon="tabler:capture" color="blue" width="32" height="32" />
       </div>
+
+      <ImageSlider />
     </div>
   );
 };
