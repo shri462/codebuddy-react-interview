@@ -49,6 +49,13 @@ const handlers = [
     return HttpResponse.json({ data: posts }, { status: 200 });
   }),
 
+  http.get(`${API_URL}/get-bgimg`, () => {
+    return HttpResponse.json(
+      { data: faker.image.urlLoremFlickr({ category: "nature" }) },
+      { status: 200 },
+    );
+  }),
+
   http.get(`${API_URL}/seats`, ({ request }) => {
     let seatNumber = 1;
 

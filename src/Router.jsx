@@ -5,6 +5,7 @@ import Root from "./pages/Root";
 import LoginForm from "./pages/set-one/login/LoginForm";
 import LoginFormContainer from "./pages/set-one/login/LoginFormContainer";
 import TicketBooking from "./pages/set-two/TicketBooking";
+import BingHomepage from "./pages/set-three/BingHomepage";
 
 const router = createBrowserRouter([
   {
@@ -27,8 +28,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/set-three",
-    element: <Root />,
-    children: [{ path: "", element: <Home /> }],
+    element: <BingHomepage />,
   },
 ]);
 
